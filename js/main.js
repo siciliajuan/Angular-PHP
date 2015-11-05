@@ -1,5 +1,5 @@
 (function(){
-	var app = angular.module('blog', []);
+	var app = angular.module('blog', ['createPost']);
 
 	app.directive('headerDirective',function(){
 		return {
