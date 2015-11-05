@@ -1,13 +1,18 @@
 /* etiqueta, identificador, clase y elemento (0,0,0,0) */
 
+nothing{
+
+}
+
 body{
-	background-color: #FCFCFC;
+	background-color: #EEE;
 }
 
 header{
 	background-color: darkred;
 	color: #FFFFFF;
 	margin: 0 auto 0 auto;
+	padding: 2% 0px 2% 0px;
 	text-align: center;
 	width: 50%;
 }
@@ -15,8 +20,19 @@ header{
 footer{
 	background-color: darkgray;
 	margin: 0 auto 0 auto;
+	padding: 1% 0px 1% 0px;
 	text-align: center;
 	width: 50%;
+}
+
+form{
+	margin: 0;
+}
+
+label{
+	display: block;
+	text-align: left;
+	margin-left: 5%;
 }
 
 section#main {
@@ -24,4 +40,22 @@ section#main {
 	margin: 0 auto 0 auto;
 	text-align: center;
 	width: 50%;
+}
+
+input, textarea{
+	width: 90%;
+	margin-bottom: 5%;
+}
+
+input[type = 'submit']{
+	background-color: #006600;
+	color: #FFFFFF;
+	margin-bottom: 10%;
+	width:45%;
+}
+
+p#form {
+	font-size: 2em;
+	padding-bottom: 5%;
+	padding-top: 5%;
 }
