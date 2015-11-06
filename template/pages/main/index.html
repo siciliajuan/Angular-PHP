@@ -1,11 +1,10 @@
 		<section id="main" ng-controller="ShowController as showCtrl">
 			<section id="posts" ng-repeat="post in showCtrl.posts">
-				<img src="./img/edit.png">
 				<h2>{{post.title}}</h2>	
 				<p>{{post.content}}</p>
 				<hr>
 			</section>
-			<form name="addPost" ng-controller="CreateController as createCtrl" ng-submit="addPost.$valid && createCtrl.addPost()"novalidate>
+			<form name="addPost" ng-controller="CreateController as createCtrl" ng-submit="addPost.$valid && createCtrl.addPost(showCtrl.posts)"novalidate>
 				<p id="form">Create Post</p>
 				<label>Titulo</label>
 				<input type="text" placeholder="Añade un t&iacute;tulo" ng-model="createCtrl.post.title" required>

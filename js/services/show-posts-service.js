@@ -17,7 +17,6 @@
 				};
 				posts.push(post1);
 				posts.push(post2);
-				console.log('Devolviendo los posts guardados');
 				return posts;
 			}
 		};
