@@ -6,18 +6,16 @@
 
 	app.controller('ShowController',function(){
 		this.posts = blog;
-		//this.loadPosts = function(blog){
-			var post1 = {
-				title: '1',
-				content: '1'
-			};
-			var post2 = {
-				title: '2',
-				content: '2'
-			};
-			this.post.push(post1);
-			this.post.push(post2);
-		//};
+		var post1 = {
+			title: 'Título 1',
+			content: 'Primer post'
+		};
+		var post2 = {
+			title: 'Título 2',
+			content: 'Segundo post'
+		};
+		this.posts.push(post1);
+		this.posts.push(post2);
 	});
 
 })();

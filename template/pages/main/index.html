@@ -1,7 +1,8 @@
 		<section id="main" ng-controller="ShowController as showCtrl">
-			<section ng-repeat="post in showCtrl.post">
+			<section ng-repeat="post in showCtrl.posts">
 				<h2>{{post.title}}</h2>	
 				<p>{{post.content}}</p>
+				<hr>
 			</section>
 			<form name="addPost" ng-controller="CreateController as createCtrl" ng-submit="addPost.$valid && createCtrl.addPost()"novalidate>
 				<p id="form">Create Post</p>
