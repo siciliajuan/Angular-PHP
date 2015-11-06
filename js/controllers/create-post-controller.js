@@ -1,12 +1,12 @@
 (function(){
 
-var app = angular.module('createPost',[]);
+	var app = angular.module('createPost',['createPostService']);
 
-app.controller('CreateController',function(){
-	this.post = {};
-	this.addPost = function(){
-		console.log(this.post);
-	};
-});
+	app.controller('CreateController',function(Create){
+		this.post = {};
+		this.addPost = function(){
+			Create.create(this.post);
+		};
+	});
 
 })();

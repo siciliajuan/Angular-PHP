@@ -7,7 +7,7 @@
 			<form name="addPost" ng-controller="CreateController as createCtrl" ng-submit="addPost.$valid && createCtrl.addPost()"novalidate>
 				<p id="form">Create Post</p>
 				<label>Titulo</label>
-				<input type="text" placeholder="Añade un t&iacute;tulo" ng-model="createCtrl.post.title"required>
+				<input type="text" placeholder="Añade un t&iacute;tulo" ng-model="createCtrl.post.title" required>
 				<label>Contenido</label>
 				<textarea placeholder="Añade aqu&iacute; el contenido" ng-model="createCtrl.post.content" required></textarea>
 				<input type="submit" value="Submit" />
