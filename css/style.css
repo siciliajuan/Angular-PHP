@@ -1,7 +1,9 @@
-/* etiqueta, identificador, clase y elemento (0,0,0,0) */
+h1,h2{
+	margin: 0px;
+}
 
-nothing{
-
+#post-1 > h2{
+	padding-top: 5%;
 }
 
 body{
@@ -19,6 +21,7 @@ header{
 
 footer{
 	background-color: darkgray;
+	color: white;
 	margin: 0 auto 0 auto;
 	padding: 1% 0px 1% 0px;
 	text-align: center;
@@ -27,6 +30,12 @@ footer{
 
 form{
 	margin: 0;
+}
+
+img {
+	float: right;
+	margin: 2%;
+	width: 24px;
 }
 
 label{
@@ -38,6 +47,7 @@ label{
 section#main {
 	background-color: #FFFFFF;
 	margin: 0 auto 0 auto;
+	padding-top: 3%;
 	text-align: center;
 	width: 80%;
 }
@@ -50,12 +60,28 @@ input, textarea{
 input[type = 'submit']{
 	background-color: #006600;
 	color: #FFFFFF;
-	margin-bottom: 10%;
+	font-weight: bold;
+	margin-bottom: 5%;
+	padding: 2% 0px 2% 0px;
 	width:45%;
 }
 
 p#form {
-	font-size: 2em;
+	font-size: 2.5em;
+	font-weight: bold;
 	padding-bottom: 5%;
 	padding-top: 5%;
+}
+
+.ng-invalid.ng-invalid-required{
+	border-color: #FF0000;
+}
+.ng-pristine.ng-invalid.ng-invalid-required{
+	border-color: #000000;
+}
+
+#posts {
+	text-align: left;
+	padding-left: 5%;
+	padding-right: 5%;
 }

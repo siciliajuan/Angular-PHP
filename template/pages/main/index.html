@@ -1,5 +1,6 @@
 		<section id="main" ng-controller="ShowController as showCtrl">
-			<section ng-repeat="post in showCtrl.posts">
+			<section id="posts" ng-repeat="post in showCtrl.posts">
+				<img src="./img/edit.png">
 				<h2>{{post.title}}</h2>	
 				<p>{{post.content}}</p>
 				<hr>
@@ -9,7 +10,7 @@
 				<label>Titulo</label>
 				<input type="text" placeholder="Añade un t&iacute;tulo" ng-model="createCtrl.post.title" required>
 				<label>Contenido</label>
-				<textarea placeholder="Añade aqu&iacute; el contenido" ng-model="createCtrl.post.content" required></textarea>
+				<textarea placeholder="Añade aqu&iacute; el contenido" ng-model="createCtrl.post.content" rows="6" required></textarea>
 				<input type="submit" value="Submit" />
 			</form>
 		</section>
